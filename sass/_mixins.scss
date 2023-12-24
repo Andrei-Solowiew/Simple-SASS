@@ -1,0 +1,30 @@
+@mixin transition {
+	transition: all 0.3s ease;
+}
+
+@mixin flex-js-sb {
+	display: flex;
+	justify-content: space-between;
+}
+
+// Размеры экранов
+@mixin laptop() {
+	@media (max-width: $laptop) {
+		@content;
+	}
+}
+@mixin tablet-690() {
+	@media (max-width: $tablet-690) {
+		@content;
+	}
+}
+@mixin tablet-510() {
+	@media (max-width: $tablet-510) {
+		@content;
+	}
+}
+@mixin mobile() {
+	@media (max-width: $mobile) {
+		@content;
+	}
+}

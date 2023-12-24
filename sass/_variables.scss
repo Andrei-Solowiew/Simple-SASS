@@ -1,0 +1,29 @@
+// Стили для цветов
+
+$color-main: #666666;
+$color-top: #4c5866;
+$color-p: #85859b;
+$color-link: #7875fe;
+$color-link-focus_bg: #dad9fb;
+$color-link-active: #4946b4;
+
+// Шрифты
+$font-size-p: 18px;
+$font-size-main: 20px;
+$font-weight-main: 400;
+$font-weight-h4: 500;
+
+$font-weights: (
+	'regular': $font-weight-main,
+	'medium': $font-weight-h4,
+);
+@function weight($weight-name) {
+	@return map-get($map: $font-weights, $key: $weight-name);
+}
+
+// Разрешения экрана
+$desktop: 1200px;
+$laptop: 1024px;
+$tablet-690: 690px;
+$tablet-510: 510px;
+$mobile: 320px;

@@ -1,0 +1,156 @@
+// Основные стили
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&display=swap');
+html {
+	box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+	box-sizing: inherit;
+}
+
+body {
+	min-width: 320px;
+	margin: 0;
+	color: $color-main;
+	font-family: 'Roboto', sans-serif;
+	font-size: $font-size-main;
+	font-weight: weight(medium);
+	line-height: 1; /*100%*/
+	overflow-anchor: none;
+	overflow-x: hidden;
+}
+
+/* body.popup__open {
+	overflow: hidden;
+}
+.input {
+	padding: 0;
+} */
+
+.input:focus,
+.btn:focus {
+	outline: none;
+}
+
+.btn,
+.input {
+	font: inherit;
+	border: none;
+}
+
+.a {
+	color: inherit;
+	text-decoration: none;
+	@include transition;
+
+	&:focus {
+		color: $color-link;
+		text-decoration: underline;
+		background-color: $color-link-focus_bg;
+		outline: none;
+	}
+
+	&:hover,
+	&:active {
+		background-color: transparent;
+		color: $color-link-active;
+	}
+}
+
+.btn {
+	padding: 20px 50px;
+	cursor: pointer;
+	color: $color-link;
+	background-color: transparent;
+	border: 1px solid $color-link;
+	@include transition;
+	&:focus {
+		border: 1px solid #7875fe;
+		background: $color-link-focus_bg;
+	}
+	&:hover {
+		color: #fff;
+		background-color: $color-link;
+	}
+	&:active {
+		color: #ffffff;
+		background: $color-link-active;
+	}
+}
+
+.img {
+	max-width: 100%;
+	height: auto;
+}
+
+.h1,
+.h2,
+.h3,
+.h4,
+.p,
+.ul {
+	padding: 0;
+	margin: 0;
+	font-weight: normal;
+}
+
+.h1 {
+	font-size: 60px;
+}
+
+.h2 {
+	font-size: 40px;
+	letter-spacing: 2.56px;
+}
+
+.h3 {
+	font-size: 30px;
+}
+
+.p {
+	font-size: $font-size-p;
+	line-height: 170%;
+}
+
+.ul {
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	padding-left: 0px;
+	list-style-type: none;
+}
+
+.container {
+	max-width: 1210px;
+	margin: 0 auto;
+	padding: 0 50px;
+}
+
+// Вспомогательные классы
+.flex {
+	display: flex;
+
+	&__js_sb {
+		justify-content: space-between;
+	}
+
+	&__js_c {
+		justify-content: center;
+	}
+
+	&__ai_c {
+		align-items: center;
+	}
+}
+
+/* @media screen and (max-width: $mobile) {
+	.container {
+		padding: 0 25px;
+	}
+	.h2 {
+		font-size: 20px;
+		line-height: 30px;
+	}
+} */

@@ -1,0 +1,186 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&display=swap');
+
+.header {
+	padding: 28px 0;
+	color: $color-top;
+	border-bottom: 1px solid #dddddd;
+
+	&__container {
+		@include flex-js-sb;
+	}
+
+	&__right {
+		display: flex;
+	}
+
+	&__list {
+		gap: 30px;
+	}
+
+	&__nav-list {
+		gap: 61px;
+
+		@media (max-width: 930px) {
+			gap: 30px;
+		}
+	}
+
+	&__search-btn,
+	&__login-link {
+		width: 24px;
+		height: 24px;
+		cursor: pointer;
+		@include transition;
+	}
+
+	&__search-btn {
+		padding: 0;
+		margin-left: 60px;
+		border: none;
+		background-color: transparent;
+
+		@media (max-width: 930px) {
+			margin-left: 30px;
+		}
+
+		&:hover &__icon path {
+			stroke: $color-link;
+			@include transition;
+		}
+
+		&:focus {
+			background-color: #dad9fb;
+		}
+
+		&:active {
+			background-color: transparent;
+		}
+
+		&:focus &__icon path {
+			stroke: $color-link;
+		}
+
+		&:active &__icon path {
+			stroke: $color-link-active;
+		}
+	}
+
+	&__search {
+		position: relative;
+		margin-left: 7px;
+		width: 0px;
+		border-bottom: 1px solid $color-top;
+		//transform: translateX(100px);
+		opacity: 0;
+		transition: all 1s ease;
+		overflow: hidden;
+
+		&_open {
+			width: 150px;
+			//transform: translateX(0);
+			opacity: 1;
+		}
+
+		&-input {
+			width: auto;
+			max-width: 130px;
+			vertical-align: top;
+			color: $color-top;
+
+			&::placeholder {
+				font-size: 20px;
+				color: #d1d1e5;
+			}
+		}
+
+		&-close {
+			position: absolute;
+			right: 210px;
+			width: 20px;
+			height: 20px;
+			padding: 2px;
+			border: none;
+			background-color: transparent;
+			opacity: 0;
+			@include transition;
+			&_visible {
+				right: -2px;
+				opacity: 1;
+			}
+
+			&:hover {
+				background-color: transparent;
+			}
+
+			&:hover &__icon {
+				circle {
+					fill: $color-link;
+					@include transition;
+				}
+
+				path {
+					stroke: #fff;
+					@include transition;
+				}
+			}
+
+			&:focus {
+				border: none;
+				background-color: transparent;
+			}
+
+			&:focus &__icon {
+				circle {
+					fill: $color-link-focus_bg;
+					stroke: $color-link;
+				}
+			}
+
+			&:active &__icon {
+				circle {
+					fill: $color-link-active;
+					stroke: none;
+				}
+			}
+		}
+	}
+
+	&__login-link {
+		margin-left: 23px;
+
+		@media (max-width: 930px) {
+			margin-left: 5px;
+		}
+
+		&:hover {
+			background-color: transparent;
+		}
+
+		&:hover &__icon {
+			path {
+				stroke: $color-link;
+				@include transition;
+			}
+		}
+
+		&:focus {
+			background-color: $color-link-focus_bg;
+		}
+
+		&:focus &__icon {
+			path {
+				stroke: $color-link;
+			}
+		}
+
+		&:active {
+			background-color: transparent;
+		}
+
+		&:active &__icon {
+			path {
+				stroke: $color-link-active;
+			}
+		}
+	}
+}
