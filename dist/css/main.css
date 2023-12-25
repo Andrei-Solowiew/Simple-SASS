@@ -335,17 +335,28 @@ body {
 
 .hero {
   padding: 130px 0;
+  background-image: url("../img/hero__bg.webp");
+  background-position: 50vw 60px;
+  background-repeat: no-repeat;
+  background-size: 67vw 380vh;
+}
+@media (max-width: 900px) {
+  .hero {
+    background-position: 130vh 50px;
+  }
 }
 .hero__h2 {
   margin-bottom: 30px;
   max-width: 450px;
   font-size: 60px;
   letter-spacing: 0px;
+  color: #4c5866;
 }
 .hero__p {
   margin-bottom: 32px;
   max-width: 450px;
   line-height: 150%;
+  color: #85859b;
 }
 .hero__btn {
   width: 255px;
