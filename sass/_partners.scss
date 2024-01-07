@@ -1,0 +1,25 @@
+.partners {
+	padding: 90px 0;
+	background-color: $color-bg;
+}
+
+.partners__list {
+	flex-wrap: wrap;
+	justify-content: center;
+	gap: 50px 30px;
+}
+
+.partners__item {
+	&-link {
+		width: 255px;
+		height: 135px;
+		border: 1px solid #c4c4c4;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+
+		&:focus {
+			background-color: transparent;
+		}
+	}
+}
