@@ -25,6 +25,20 @@
 		}
 	}
 
+	&__nav-link {
+		&:hover {
+			color: $color-link;
+		}
+
+		&:focus {
+			color: $color-top;
+		}
+
+		&:active {
+			color: $color-link-active;
+		}
+	}
+
 	&__search-btn,
 	&__login-link {
 		width: 24px;

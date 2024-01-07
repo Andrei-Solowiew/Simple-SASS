@@ -48,7 +48,7 @@ body {
 
 	&:focus {
 		color: $color-link;
-		text-decoration: underline;
+		text-decoration: none;
 		background-color: $color-link-focus_bg;
 		outline: none;
 	}
@@ -112,6 +112,7 @@ body {
 
 .p {
 	font-size: $font-size-p;
+	color: $color-p;
 	line-height: 170%;
 }
 
