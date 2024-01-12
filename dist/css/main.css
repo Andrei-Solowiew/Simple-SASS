@@ -43,10 +43,14 @@ body {
 
 .a {
   display: inline-block;
-  color: inherit;
+  color: #7875fe;
   text-decoration: none;
   -webkit-transition: all 0.3s ease;
   transition: all 0.3s ease;
+}
+.a:visited {
+  text-decoration: none;
+  color: #7875fe;
 }
 .a:focus {
   color: #7875fe;
@@ -97,20 +101,16 @@ body {
   font-weight: normal;
 }
 
-.h1 {
-  font-size: 60px;
-}
-
 .h2 {
-  font-size: 40px;
+  font-size: 2.5rem;
 }
 
 .h3 {
-  font-size: 30px;
+  font-size: 1.875rem;
 }
 
 .p {
-  font-size: 18px;
+  font-size: 1.125rem;
   color: #85859b;
   line-height: 170%;
 }
@@ -188,6 +188,12 @@ body {
     gap: 30px;
   }
 }
+.header__nav-link {
+  color: #4c5866;
+}
+.header__nav-link:visited {
+  color: #4c5866;
+}
 .header__nav-link:hover {
   color: #7875fe;
 }
@@ -253,23 +259,23 @@ body {
   color: #4c5866;
 }
 .header__search-input::-webkit-input-placeholder {
-  font-size: 20px;
+  font-size: 1.25rem;
   color: #d1d1e5;
 }
 .header__search-input::-moz-placeholder {
-  font-size: 20px;
+  font-size: 1.25rem;
   color: #d1d1e5;
 }
 .header__search-input:-ms-input-placeholder {
-  font-size: 20px;
+  font-size: 1.25rem;
   color: #d1d1e5;
 }
 .header__search-input::-ms-input-placeholder {
-  font-size: 20px;
+  font-size: 1.25rem;
   color: #d1d1e5;
 }
 .header__search-input::placeholder {
-  font-size: 20px;
+  font-size: 1.25rem;
   color: #d1d1e5;
 }
 .header__search-close {
@@ -357,7 +363,7 @@ body {
 .hero__h2 {
   margin-bottom: 30px;
   max-width: 450px;
-  font-size: 60px;
+  font-size: 3.75rem;
   letter-spacing: 0px;
   color: #4c5866;
 }
@@ -368,7 +374,7 @@ body {
   color: #85859b;
 }
 .hero__btn {
-  padding: 23px 0;
+  padding: 23px 50px;
   width: 255px;
   text-align: center;
 }
@@ -403,7 +409,7 @@ body {
   margin-right: 30px;
 }
 .results__item-h4 {
-  font-size: 18px;
+  font-size: 1.125rem;
   line-height: 150%;
 }
 .results__item-p {
@@ -467,7 +473,7 @@ body {
 }
 .catalog__card-circulation {
   margin-bottom: 8px;
-  font-size: 14px;
+  font-size: 0.875rem;
   color: #b5b5bd;
 }
 .catalog__card-p {
@@ -531,4 +537,38 @@ body {
 }
 .partners__item-link:focus {
   background-color: transparent;
+}
+
+.sketchbook {
+  padding-top: 90px;
+}
+
+.sketchbook__container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 30px;
+}
+
+.sketchbook__text {
+  margin-top: 26px;
+  max-width: 350px;
+}
+.sketchbook__text-h2 {
+  margin-bottom: 8px;
+}
+.sketchbook__text-p {
+  margin-bottom: 30px;
+}
+.sketchbook__text-btn {
+  padding: 25px 50px;
+  width: 255px;
+}
+
+.sketchbook__img {
+  width: calc(100% - 350px);
+  height: 100%;
+}
+.footer {
+  background-color: #4c5866;
 }

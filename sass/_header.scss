@@ -26,6 +26,12 @@
 	}
 
 	&__nav-link {
+		color: $color-top;
+
+		&:visited {
+			color: $color-top;
+		}
+
 		&:hover {
 			color: $color-link;
 		}
@@ -102,7 +108,7 @@
 			color: $color-top;
 
 			&::placeholder {
-				font-size: 20px;
+				font-size: 1.25rem;
 				color: #d1d1e5;
 			}
 		}

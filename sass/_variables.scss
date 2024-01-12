@@ -9,8 +9,6 @@ $color-link: #7875fe;
 $color-link-focus_bg: #dad9fb;
 $color-link-active: #4946b4;
 
-// Шрифты
-$font-size-p: 18px;
 $font-size-main: 20px;
 $font-weight-main: 400;
 $font-weight-h4: 500;
@@ -19,6 +17,7 @@ $font-weights: (
 	'regular': $font-weight-main,
 	'medium': $font-weight-h4,
 );
+
 @function weight($weight-name) {
 	@return map-get($map: $font-weights, $key: $weight-name);
 }
