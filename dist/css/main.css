@@ -572,3 +572,28 @@ body {
 .footer {
   background-color: #4c5866;
 }
+
+.footer__container {
+  padding: 28px 50px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.footer__socials {
+  gap: 30px;
+}
+
+.footer__aside {
+  padding: 3px 0;
+  text-align: center;
+  font-size: 13px;
+  text-transform: uppercase;
+  background-color: #fff;
+}
+.footer__aside_gray {
+  color: #bcbcbc;
+}
