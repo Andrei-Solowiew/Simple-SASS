@@ -1,0 +1,25 @@
+.footer {
+	background-color: $color-top;
+}
+
+.footer__container {
+	padding: 28px 50px;
+	display: flex;
+	justify-content: space-between;
+}
+
+.footer__socials {
+	gap: 30px;
+}
+
+.footer__aside {
+	padding: 3px 0;
+	text-align: center;
+	font-size: 13px;
+	text-transform: uppercase;
+	background-color: #fff;
+
+	&_gray {
+		color: #bcbcbc;
+	}
+}

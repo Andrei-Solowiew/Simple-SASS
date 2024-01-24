@@ -1,0 +1,35 @@
+.sketchbook {
+	padding-top: 90px;
+}
+
+.sketchbook__container {
+	display: flex;
+	gap: 30px;
+}
+
+.sketchbook__text {
+	margin-top: 26px;
+	max-width: 350px;
+
+	&-h2 {
+		margin-bottom: 8px;
+	}
+
+	&-p {
+		margin-bottom: 30px;
+	}
+
+	&-btn {
+		padding: 25px 50px;
+		width: 255px;
+	}
+}
+
+.sketchbook__img {
+	width: calc(100% - 350px);
+	height: 100%;
+
+	@media (min-width: 1440px) {
+		//width: 730px;
+	}
+}
