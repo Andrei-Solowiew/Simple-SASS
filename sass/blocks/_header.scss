@@ -14,14 +14,16 @@
 	}
 
 	&__list {
-		gap: 30px;
+		gap: 0 30px;
 	}
 
 	&__nav-list {
-		gap: 61px;
+		gap: 10px 61px;
+		flex-wrap: wrap;
+		justify-content: center;
 
 		@media (max-width: 930px) {
-			gap: 30px;
+			////gap: 0 30px;
 		}
 	}
 
@@ -124,6 +126,7 @@
 			opacity: 0;
 			@include transition;
 			&_visible {
+				top: 2px;
 				right: -2px;
 				opacity: 1;
 			}
