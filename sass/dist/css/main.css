@@ -48,6 +48,9 @@ body {
   -webkit-transition: all 0.3s ease;
   transition: all 0.3s ease;
 }
+.a:hover {
+  color: #7875fe;
+}
 .a:visited {
   text-decoration: none;
   color: #7875fe;
@@ -58,7 +61,7 @@ body {
   background-color: #dad9fb;
   outline: none;
 }
-.a:hover, .a:active {
+.a:active {
   background-color: transparent;
   color: #4946b4;
 }
@@ -129,25 +132,8 @@ body {
   padding: 0 50px;
 }
 
-.flex {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-}
-.flex__js_sb {
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-}
-.flex__js_c {
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-}
-.flex__ai_c {
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+.found {
+  background-color: yellow;
 }
 
 /* @media screen and (max-width: $mobile) {
@@ -164,6 +150,7 @@ body {
   color: #4c5866;
   border-bottom: 1px solid #dddddd;
 }
+
 .header__container {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -172,22 +159,32 @@ body {
       -ms-flex-pack: justify;
           justify-content: space-between;
 }
+
 .header__right {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
+
 .header__list {
   gap: 0 30px;
 }
+
 .header__nav-list {
-  gap: 5px 61px;
+  gap: 10px 61px;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 @media (max-width: 930px) {
   .header__nav-list {
-    gap: 0 30px;
+    /* gap: 0 30px; */
+    gap: 15px;
   }
 }
 .header__nav-link {
@@ -200,18 +197,13 @@ body {
   color: #7875fe;
 }
 .header__nav-link:focus {
-  color: #4c5866;
+  padding: 4px 4px 4px 4px;
 }
 .header__nav-link:active {
+  padding: 0;
   color: #4946b4;
 }
-.header__search-btn, .header__login-link {
-  width: 24px;
-  height: 24px;
-  cursor: pointer;
-  -webkit-transition: all 0.3s ease;
-  transition: all 0.3s ease;
-}
+
 .header__search-btn {
   padding: 0;
   margin-left: 60px;
@@ -230,6 +222,7 @@ body {
 }
 .header__search-btn:focus {
   background-color: #dad9fb;
+  outline: none;
 }
 .header__search-btn:active {
   background-color: transparent;
@@ -240,6 +233,7 @@ body {
 .header__search-btn:active .header__search-btn__icon path {
   stroke: #4946b4;
 }
+
 .header__search {
   position: relative;
   margin-left: 7px;
@@ -252,6 +246,7 @@ body {
 }
 .header__search_open {
   width: 150px;
+  max-height: 26px;
   opacity: 1;
 }
 .header__search-input {
@@ -322,6 +317,7 @@ body {
   fill: #4946b4;
   stroke: none;
 }
+
 .header__login-link {
   margin-left: 23px;
 }
@@ -349,6 +345,15 @@ body {
 }
 .header__login-link:active .header__login-link__icon path {
   stroke: #4946b4;
+}
+
+.header__search-btn,
+.header__login-link {
+  width: 24px;
+  height: 24px;
+  cursor: pointer;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
 }
 
 .hero {
@@ -487,14 +492,23 @@ body {
   padding-right: 25px;
   color: #7875fe;
 }
+.catalog__card-a:hover {
+  color: #4946b4;
+}
 .catalog__card-a:hover::after {
   background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='21' height='15' viewBox='0 0 21 15' fill='none'%3E%3Cpath d='M20.7071 8.20711C21.0976 7.81658 21.0976 7.18342 20.7071 6.79289L14.3431 0.428932C13.9526 0.0384078 13.3195 0.0384078 12.9289 0.428932C12.5384 0.819457 12.5384 1.45262 12.9289 1.84315L18.5858 7.5L12.9289 13.1569C12.5384 13.5474 12.5384 14.1805 12.9289 14.5711C13.3195 14.9616 13.9526 14.9616 14.3431 14.5711L20.7071 8.20711ZM0 8.5H20V6.5H0V8.5Z' fill='%234946B4'/%3E%3C/svg%3E");
 }
 .catalog__card-a:focus {
   padding: 4px 29px 4px 4px;
 }
+.catalog__card-a:focus::after {
+  right: 4px;
+}
 .catalog__card-a:active {
   padding: 0 25px 0 0;
+}
+.catalog__card-a:active::after {
+  right: 0px;
 }
 .catalog__card-a::after {
   content: "";
@@ -599,4 +613,8 @@ body {
 }
 .footer__aside_gray {
   color: #bcbcbc;
+}
+
+a {
+  color: red;
 }
