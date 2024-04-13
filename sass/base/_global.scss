@@ -46,6 +46,10 @@ body {
 	text-decoration: none;
 	@include transition;
 
+	&:hover {
+		color: $color-link;
+	}
+
 	&:visited {
 		text-decoration: none;
 		color: $color-link;
@@ -58,7 +62,7 @@ body {
 		outline: none;
 	}
 
-	&:hover,
+	//&:hover,
 	&:active {
 		background-color: transparent;
 		color: $color-link-active;
@@ -131,21 +135,8 @@ body {
 	padding: 0 50px;
 }
 
-// Вспомогательные классы
-.flex {
-	display: flex;
-
-	&__js_sb {
-		justify-content: space-between;
-	}
-
-	&__js_c {
-		justify-content: center;
-	}
-
-	&__ai_c {
-		align-items: center;
-	}
+.found {
+	background-color: yellow;
 }
 
 /* @media screen and (max-width: $mobile) {
