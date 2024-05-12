@@ -107,6 +107,11 @@ body {
 .h2 {
   font-size: 2.5rem;
 }
+@media (max-width: 768px) {
+  .h2 {
+    font-size: 1.9rem;
+  }
+}
 
 .h3 {
   font-size: 1.875rem;
@@ -565,7 +570,8 @@ body {
 }
 @media (max-width: 768px) {
   .results__img {
-    width: 47%;
+    width: 48%;
+    margin-right: 27px;
   }
 }
 
@@ -584,6 +590,11 @@ body {
 
 .results__p {
   line-height: 170%;
+}
+@media (max-width: 768px) {
+  .results__p {
+    max-width: 330px;
+  }
 }
 .results__p_top {
   margin-bottom: 10px;
