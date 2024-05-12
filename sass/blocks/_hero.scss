@@ -5,29 +5,40 @@
 	background-repeat: no-repeat;
 	//background-size: 960px 1336px;
 	background-size: 67vw 380vh;
-
 	@media (max-width: 900px) {
 		background-position: 130vh 50px;
 	}
-
-	&__h2 {
-		margin-bottom: 30px;
-		max-width: 450px;
-		font-size: 3.75rem;
-		letter-spacing: 0px;
-		color: $color-top;
+	@media (max-width: 768px) {
+		padding: 65px 0;
+		background-position: 87vh 60px;
+		background-size: 63vw 130vh;
 	}
+}
 
-	&__p {
-		margin-bottom: 32px;
-		max-width: 450px;
-		line-height: 150%;
-		color: $color-p;
+.hero__h2 {
+	margin-bottom: 30px;
+	max-width: 450px;
+	font-size: 3.75rem;
+	letter-spacing: 0px;
+	color: $color-top;
+	@media (max-width: 768px) {
+		max-width: 424px;
+		font-size: 3.12rem;
 	}
+}
 
-	&__btn {
-		padding: 23px 50px;
-		width: 255px;
-		text-align: center;
+.hero__p {
+	margin-bottom: 32px;
+	max-width: 450px;
+	line-height: 150%;
+	color: $color-p;
+	@media (max-width: 768px) {
+		max-width: 390px;
 	}
+}
+
+.hero__btn {
+	padding: 23px 50px;
+	width: 255px;
+	text-align: center;
 }
