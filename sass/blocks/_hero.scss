@@ -6,9 +6,10 @@
 	//background-size: 960px 1336px;
 	background-size: 67vw 380vh;
 	@media (max-width: 900px) {
-		background-position: 130vh 50px;
+		background-position: 90vh 120px;
+		background-size: 63vw 150vh;
 	}
-	@media (max-width: 768px) {
+	@media (max-width: 769px) {
 		padding: 65px 0;
 		background-position: 87vh 60px;
 		background-size: 63vw 130vh;
@@ -21,7 +22,7 @@
 	font-size: 3.75rem;
 	letter-spacing: 0px;
 	color: $color-top;
-	@media (max-width: 768px) {
+	@media (max-width: 769px) {
 		max-width: 424px;
 		font-size: 3.12rem;
 	}
@@ -32,7 +33,7 @@
 	max-width: 450px;
 	line-height: 150%;
 	color: $color-p;
-	@media (max-width: 768px) {
+	@media (max-width: 769px) {
 		max-width: 390px;
 	}
 }

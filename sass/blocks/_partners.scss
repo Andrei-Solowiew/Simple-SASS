@@ -1,6 +1,9 @@
 .partners {
 	padding: 90px 0;
 	background-color: $color-bg;
+	@media (max-width: 769px) {
+		padding: 62px 0;
+	}
 }
 
 .partners__list {
@@ -17,6 +20,10 @@
 		display: flex;
 		justify-content: center;
 		align-items: center;
+		@media (max-width: 769px) {
+			width: 150px;
+			height: 80px;
+		}
 
 		&:focus {
 			background-color: transparent;

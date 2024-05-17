@@ -108,13 +108,14 @@ body {
 
 .h2 {
 	font-size: 2.5rem;
-	@media (max-width: 768px) {
+	@media (max-width: 769px) {
 		font-size: 1.9rem;
 	}
 }
 
 .h3 {
 	font-size: 1.875rem;
+	line-height: 35px;
 }
 
 .p {
@@ -134,7 +135,7 @@ body {
 .container {
 	max-width: 1210px;
 	margin: 0 auto;
-	padding: 0 35px 0 40px;
+	padding: 0 39px 0 39px;
 }
 
 .found {

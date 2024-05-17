@@ -1,14 +1,24 @@
 .catalog {
 	padding: 90px 0;
+	@media (max-width: 769px) {
+		padding: 60px 0;
+	}
 
 	&__cards {
 		flex-wrap: wrap;
 		justify-content: center;
 		gap: 50px 30px;
+		@media (max-width: 769px) {
+			justify-content: space-between;
+			gap: 60px 30px;
+		}
 	}
 
 	&__card {
 		max-width: 255px;
+		@media (max-width: 769px) {
+			max-width: 330px;
+		}
 
 		&-img {
 			margin-bottom: 20px;
@@ -21,6 +31,7 @@
 		&-circulation {
 			margin-bottom: 8px;
 			font-size: 0.875rem;
+			line-height: 16px;
 			color: $color-catalog-circulation;
 		}
 
