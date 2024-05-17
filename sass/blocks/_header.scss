@@ -4,22 +4,23 @@
 	padding: 28px 0 24px 0;
 	color: $color-top;
 	border-bottom: 1px solid #dddddd;
-	@media (max-width: 768px) {
+	@media (max-width: 769px) {
 		padding: 0;
 	}
 }
 
 .header__container {
 	@include flex-js-sb;
-	@media (max-width: 768px) {
+	@media (max-width: 769px) {
 		display: grid;
 		grid-template-columns: 1fr 1fr;
 		grid-template-rows: 45px 60px;
+		padding: 0 35px 0 39px;
 	}
 }
 
 .header__logo {
-	@media (max-width: 768px) {
+	@media (max-width: 769px) {
 		padding: 10px 0;
 		justify-content: flex-end;
 	}
@@ -27,7 +28,7 @@
 
 .header__line {
 	display: none;
-	@media (max-width: 768px) {
+	@media (max-width: 769px) {
 		position: absolute;
 		top: 45px;
 		left: 0;
@@ -39,7 +40,7 @@
 }
 
 .header__nav {
-	@media (max-width: 768px) {
+	@media (max-width: 769px) {
 		grid-column-start: 1;
 		grid-column-end: 3;
 		grid-row-start: 2;
@@ -57,7 +58,7 @@
 			/* gap: 0 30px; */
 			gap: 15px;
 		}
-		@media (max-width: 768px) {
+		@media (max-width: 769px) {
 			width: 100%;
 			justify-content: space-between;
 			gap: initial;
@@ -85,7 +86,7 @@
 
 .header__buttons {
 	display: flex;
-	@media (max-width: 768px) {
+	@media (max-width: 769px) {
 		padding: 10px 0;
 		justify-content: flex-end;
 	}
@@ -198,7 +199,7 @@
 	@media (max-width: 930px) {
 		margin-left: 5px;
 	}
-	@media (max-width: 768px) {
+	@media (max-width: 769px) {
 		margin-left: 20px;
 	}
 	&:hover {
