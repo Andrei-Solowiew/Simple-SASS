@@ -6,6 +6,9 @@
 	padding: 28px 50px;
 	display: flex;
 	justify-content: space-between;
+	@media (max-width: 769px) {
+		padding: 28px 39px;
+	}
 }
 
 .footer__socials {

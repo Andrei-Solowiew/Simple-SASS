@@ -614,9 +614,9 @@ body {
 }
 @media (max-width: 769px) {
   .catalog__cards {
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
     gap: 60px 30px;
   }
 }
@@ -726,20 +726,44 @@ body {
 .sketchbook {
   padding-top: 90px;
 }
+@media (max-width: 769px) {
+  .sketchbook {
+    overflow: hidden;
+    padding-top: 60px;
+  }
+}
 
 .sketchbook__container {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  gap: 30px;
+  -webkit-column-gap: 10px;
+     -moz-column-gap: 10px;
+          column-gap: 10px;
+}
+@media (max-width: 769px) {
+  .sketchbook__container {
+    width: 1000px;
+    max-width: none;
+  }
 }
 
 .sketchbook__text {
   margin-top: 26px;
   max-width: 350px;
 }
+@media (max-width: 769px) {
+  .sketchbook__text {
+    margin-top: 0;
+  }
+}
 .sketchbook__text-h2 {
   margin-bottom: 8px;
+}
+@media (max-width: 769px) {
+  .sketchbook__text-h2 {
+    margin-bottom: 21px;
+  }
 }
 .sketchbook__text-p {
   margin-bottom: 30px;
@@ -750,9 +774,19 @@ body {
 }
 
 .sketchbook__img {
-  width: calc(100% - 350px);
+  /* 	width: calc(100% - 350px); */
+  width: 100%;
   height: 100%;
 }
+@media (max-width: 769px) {
+  .sketchbook__img {
+    /* display: block; */
+    /* margin-left: 130px; */
+    /* width: 450px;
+    height: auto; */
+  }
+}
+
 .footer {
   background-color: #4c5866;
 }
@@ -765,6 +799,11 @@ body {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+}
+@media (max-width: 769px) {
+  .footer__container {
+    padding: 28px 39px;
+  }
 }
 
 .footer__socials {

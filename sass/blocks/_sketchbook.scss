@@ -1,18 +1,32 @@
 .sketchbook {
 	padding-top: 90px;
+	@media (max-width: 769px) {
+		overflow: hidden;
+		padding-top: 60px;
+	}
 }
 
 .sketchbook__container {
 	display: flex;
-	gap: 30px;
+	column-gap: 10px;
+	@media (max-width: 769px) {
+		width: 1000px;
+		max-width: none;
+	}
 }
 
 .sketchbook__text {
 	margin-top: 26px;
 	max-width: 350px;
+	@media (max-width: 769px) {
+		margin-top: 0;
+	}
 
 	&-h2 {
 		margin-bottom: 8px;
+		@media (max-width: 769px) {
+			margin-bottom: 21px;
+		}
 	}
 
 	&-p {
@@ -26,10 +40,13 @@
 }
 
 .sketchbook__img {
-	width: calc(100% - 350px);
+	/* 	width: calc(100% - 350px); */
+	width: 100%;
 	height: 100%;
-
-	@media (min-width: 1440px) {
-		//width: 730px;
+	@media (max-width: 769px) {
+		/* display: block; */
+		/* margin-left: 130px; */
+		/* width: 450px;
+		height: auto; */
 	}
 }
