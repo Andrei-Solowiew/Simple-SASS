@@ -799,6 +799,11 @@ body {
       -ms-flex-pack: justify;
           justify-content: space-between;
 }
+@media (max-width: 769px) {
+  .footer__container {
+    padding: 28px 39px;
+  }
+}
 
 .footer__socials {
   gap: 30px;
