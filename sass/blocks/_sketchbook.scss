@@ -1,6 +1,7 @@
 .sketchbook {
 	padding-top: 90px;
 	@media (max-width: 769px) {
+		overflow: hidden;
 		padding-top: 60px;
 	}
 }

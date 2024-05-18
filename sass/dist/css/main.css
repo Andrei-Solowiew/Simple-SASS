@@ -728,6 +728,7 @@ body {
 }
 @media (max-width: 769px) {
   .sketchbook {
+    overflow: hidden;
     padding-top: 60px;
   }
 }
