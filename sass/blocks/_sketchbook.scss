@@ -13,6 +13,9 @@
 		width: 1000px;
 		max-width: none;
 	}
+	@media (max-width: 577px) {
+		/* width: 576px; */
+	}
 }
 
 .sketchbook__text {
