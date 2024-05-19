@@ -67,9 +67,11 @@ body {
 }
 
 .btn {
-  padding: 20px 50px;
+  padding: 20px 20px;
+  width: 255px;
   cursor: pointer;
   color: #7875fe;
+  font-weight: normal;
   background-color: transparent;
   border: 1px solid #7875fe;
   -webkit-transition: all 0.3s ease;
@@ -86,6 +88,11 @@ body {
 .btn:active {
   color: #ffffff;
   background: #4946b4;
+}
+@media (max-width: 577px) {
+  .btn {
+    width: 196px;
+  }
 }
 
 .img {
@@ -123,6 +130,11 @@ body {
   color: #85859b;
   line-height: 170%;
 }
+@media (max-width: 577px) {
+  .p {
+    font-size: 1rem;
+  }
+}
 
 .ul {
   display: -webkit-box;
@@ -135,7 +147,12 @@ body {
 .container {
   max-width: 1210px;
   margin: 0 auto;
-  padding: 0 39px 0 39px;
+  padding: 0 39px;
+}
+@media (max-width: 577px) {
+  .container {
+    padding: 0 33px;
+  }
 }
 
 .found {
@@ -178,6 +195,11 @@ body {
     padding: 0 35px 0 39px;
   }
 }
+@media (max-width: 577px) {
+  .header__container {
+    padding: 0 33px;
+  }
+}
 
 @media (max-width: 769px) {
   .header__logo {
@@ -197,7 +219,7 @@ body {
     top: 45px;
     left: 0;
     display: block;
-    width: 768px;
+    width: 100%;
     height: 1px;
     background-color: rgb(221, 221, 221);
   }
@@ -449,6 +471,13 @@ body {
     background-size: 63vw 130vh;
   }
 }
+@media (max-width: 577px) {
+  .hero {
+    padding: 60px 0;
+    background-position: 66vh 16px;
+    background-size: 62vw 96vh;
+  }
+}
 
 .hero__h2 {
   margin-bottom: 30px;
@@ -459,13 +488,18 @@ body {
 }
 @media (max-width: 769px) {
   .hero__h2 {
-    max-width: 424px;
-    font-size: 3.12rem;
+    max-width: 286px;
+    font-size: 2.36rem;
+  }
+}
+@media (max-width: 577px) {
+  .hero__h2 {
+    margin-bottom: 20px;
   }
 }
 
 .hero__p {
-  margin-bottom: 32px;
+  margin-bottom: 18px;
   max-width: 450px;
   line-height: 150%;
   color: #85859b;
@@ -475,10 +509,13 @@ body {
     max-width: 390px;
   }
 }
+@media (max-width: 577px) {
+  .hero__p {
+    max-width: 287px;
+  }
+}
 
 .hero__btn {
-  padding: 23px 50px;
-  width: 255px;
   text-align: center;
 }
 
@@ -745,6 +782,11 @@ body {
   .sketchbook__container {
     width: 1000px;
     max-width: none;
+  }
+}
+@media (max-width: 577px) {
+  .sketchbook__container {
+    /* width: 576px; */
   }
 }
 

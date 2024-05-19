@@ -3,7 +3,6 @@
 	background-image: url('../img/hero__bg.webp');
 	background-position: 50vw 60px;
 	background-repeat: no-repeat;
-	//background-size: 960px 1336px;
 	background-size: 67vw 380vh;
 	@media (max-width: 900px) {
 		background-position: 90vh 120px;
@@ -14,6 +13,11 @@
 		background-position: 87vh 60px;
 		background-size: 63vw 130vh;
 	}
+	@media (max-width: 577px) {
+		padding: 60px 0;
+		background-position: 66vh 16px;
+		background-size: 62vw 96vh;
+	}
 }
 
 .hero__h2 {
@@ -23,23 +27,27 @@
 	letter-spacing: 0px;
 	color: $color-top;
 	@media (max-width: 769px) {
-		max-width: 424px;
-		font-size: 3.12rem;
+		max-width: 286px;
+		font-size: 2.36rem;
+	}
+	@media (max-width: 577px) {
+		margin-bottom: 20px;
 	}
 }
 
 .hero__p {
-	margin-bottom: 32px;
+	margin-bottom: 18px;
 	max-width: 450px;
 	line-height: 150%;
 	color: $color-p;
 	@media (max-width: 769px) {
 		max-width: 390px;
 	}
+	@media (max-width: 577px) {
+		max-width: 287px;
+	}
 }
 
 .hero__btn {
-	padding: 23px 50px;
-	width: 255px;
 	text-align: center;
 }
